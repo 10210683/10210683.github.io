@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eva's portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .card {
+            height: 100%;
+        }
+
+        .card-img-top {
+            height: 200px; 
+            object-fit: cover; 
+        }
+
+        body {
+            background-color: #d3edff; 
+        }
+
+        .navbar.navbar-expand-lg.bg-light.bg-opacity-60 {
+            background-color: #6da5ff !important; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; 
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            font-weight: bold; 
+            color: #ffffff; 
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #ffffff !important; 
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-60 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於我</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            作品集
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">素描</a></li>
+                            <li><a class="dropdown-item" href="#">水彩</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">其他</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="圖片5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="圖片6.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="圖片11.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-5">
+                <img src="圖片2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col">
+                <h2>獨一無二</h2>
+                <p>創作理念 :創作理念 :
+
+                    每一隻狗都是獨一無二的，跟人一樣，每個樣貌都不同，在這個世界上有各式各樣的狗，有長毛、有短毛、有體型小的、也有體型大的，連毛色每一隻也都不一樣，只要我們仔細的觀察，便能發現各個的獨特之美，不僅是狗，所有的事物都是獨一無二的。
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="圖片1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">水墨</h5>
+                        <p class="card-text">
+                            春天的暖風拂拂吹過，淡淡的紫藤花香舖滿了四周，小狗沉醉在自己的世界裡，與蝴蝶嬉戲著，享受這午後的休閒，感受春風的氣息，寧靜的空氣中，彷彿只有它們，在這忙碌的社會裡，大部分的人因為被困於現實的束縛，而得不到一絲的喘息，不妨暫時停下手邊的工作，感受生活的美好，並且享受當下。
+                        </p>
+                        <a href="#" class="btn btn-primary">前往作品</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="圖片9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">版畫</h5>
+                        <p class="card-text">
+                            作品裡的貝殼象徵著複雜的社會，有些貝殼摸起來光滑，有些摸起來粗糙，各個奇形怪狀的貝殼，就如社會中繁瑣的工作。在這社會中，每個人一定都會遇到些瓶頸，我們應該珍惜，化作為增進自已的能量，宛如貝殼一樣，細心的收藏呵護它，便會使它的價值變得更珍貴。
+                        </p>
+                        <a href="#" class="btn btn-primary">前往作品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
