@@ -1,0 +1,258 @@
+html,
+body {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#myCursor {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    /* 示例背景色，可按需修改 */
+    border-radius: 100%;
+    /* 圓形指針 */
+    pointer-events: none;
+    /* 避免干擾點擊事件 */
+    z-index: 9999;
+    /* 保證在最上層 */
+}
+
+.navbar-icon {
+    width: 24px;
+    /* 調整圖示寬度 */
+    height: 24px;
+    /* 調整圖示高度 */
+    margin-right: 8px;
+    /* 調整圖示與文字之間的間距 */
+    vertical-align: middle;
+    /* 垂直對齊文字中間 */
+}
+
+.content {
+    padding: 20px;
+    height: 200vh;
+    /* 設置高度以確保頁面可滾動 */
+}
+
+.body {
+    background-color: #1d1d1d;
+}
+
+.navbar.navbar-expand-lg.bg-light.bg-opacity-60 {
+    background-color: #000000 !important;
+    height: 90px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff;
+    font-style: large;
+    padding-left: 5%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.box {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        width: 50%;
+        float: left;
+    }
+}
+
+.con {
+    width: 100%;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    height: 250px;
+    animation: move 25s infinite linear;
+}
+
+.box.active {
+    animation-play-state: paused;
+}
+
+/* .box:hover {
+    animation-play-state: paused;
+} */
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.img {
+    flex-shrink: 0;
+    width: 20%;
+    height: 100%;
+}
+
+.x {
+    display: grid;
+    color: #b60000;
+    padding: 0% auto;
+    padding-bottom: 20px;
+    padding-top: 20%;
+    font-size: 2rem;
+    align: left;
+}
+
+.y {
+    display: grid;
+    color: #b60000;
+    place-items: center;
+    padding-bottom: 30px;
+}
+
+.bb {
+    display: flex;
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    height: 100vh;
+    /* 使容器高度为视窗高度 */
+    flex-wrap: wrap;
+    /* 如果子元素过多，可以换行 */
+    gap: 20px;
+    /* 图片之间的间距 */
+}
+
+.bb .im:first-child {
+    width: 20%;
+}
+
+.bb .im:nth-child(2) {
+    width: 20%;
+}
+
+.bb .im:nth-child(3) {
+    width: 20%;
+}
+
+.bb .im:last-child {
+    width: 20%;
+}
+
+.im {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+.im:hover {
+    width: 50%;
+}
+
+.bb:hover .im:not(:hover) {
+    width: 15%;
+}
+
+.carousel-inner {
+    margin: 5% auto;
+    border-radius: 10px;
+    padding: 70px;
+}
+
+.cont {
+    color: #ffffff;
+    padding-top: 10%;
+}
+
+.y {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.scrolling-cards-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.scrolling-cards {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+.scrolling-cards:hover {
+    animation-play-state: paused;
+}
+
+.card {
+    flex: 0 0 18rem;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
